@@ -1,0 +1,54 @@
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    justify-content: center;
+    min-height: auto;
+    min-width: none;
+    background-color: purple;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+display: flex;
+}
+.container{
+    padding: 3rem;
+    border-radius:40px ;
+    background-color: plum;
+    box-shadow: inset 20px 20px 60px ,fuchsia inset -20px -20px 60px #70ffff;
+
+}
+input{
+    font-family: "Montserrat", sans-serif;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem; 
+}
+button {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fff;
+  }
+  button:hover {
+    background: #52c4d9;
+    color: #fff;
+  }
+  .for-invalid-input {
+    display: none;
+    background-color: rgb(197, 61, 61);
+    border-radius: 5px;
+    padding: 0.2rem;
+    color: #fff;
+  }
+  /* this will show the input message */
+  .show {
+    display: block;
+  }
+  
