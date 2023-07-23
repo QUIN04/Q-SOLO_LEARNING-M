@@ -1,0 +1,31 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+
+# Read the CSV file using pandas
+data = pd.read_csv('Banknote-authentication-dataset.csv')
+
+# Get the values of 'V1' and 'V2' as NumPy arrays
+V1 = data['V1'].values
+V2 = data['V2'].values
+
+# Calculate the mean value of 'V1' and 'V2'
+mean_V = (V1 + V2) / 2
+
+# Print the mean value
+print("The mean is:" , mean_V)
+
+# Get the values of 'V1' and 'V2' as NumPy arrays
+V1 = data['V1'].values
+V2 = data['V2'].values
+
+# Calculate the standard deviation of 'V1' and 'V2' using numpy's std() function
+std_V1 = np.std(V1)
+std_V2 = np.std(V2)
+
+# Print the standard deviations of 'V1' and 'V2'
+print("The standard deviation of V1 is:", std_V1)
+print("The standard deviation of V2 is:", std_V2)
+
+plt.scatter(V1, V2)
