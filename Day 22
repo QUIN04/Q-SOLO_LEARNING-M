@@ -1,0 +1,11 @@
+import pandas as pd
+
+data = pd.read_csv('happyscore_income.csv')
+
+happy = data['happyScore']
+income = data['avg_income']
+
+print(happy)
+
+income.max()
+
