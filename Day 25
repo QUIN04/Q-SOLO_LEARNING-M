@@ -1,0 +1,31 @@
+print("Hello Jupyter!")
+print("Hello Jupyter!")
+
+x = 10
+y = x + 2
+y
+
+x= 12
+y= x + 3
+y
+
+
+mylist = [1,2,3,4]
+mylist_squared = [element**2 for element in mylist] # nice and Pythonic list comprehension be
+print(mylist_squared)
+print(max(mylist_squared)) # the maximum element
+
+
+%matplotlib inline
+
+import matplotlib # remember in Python you have to import the relevant libraries
+
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+x = np.linspace(0.1,10) # return evenly spaced numbers over a specified interval, from 0.1 to 10 (see the help below)
+
+line = plt.plot(x, np.log(x),'--',linewidth = 1) # plot these evenly spaced numbers against their logarithm
+                                                 # use '--' as line (try with just one for instance), 
+                                                 # and control the width
