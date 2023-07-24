@@ -1,0 +1,34 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the data from CSV file
+data = pd.read_csv('happyscore_income.csv')
+
+# Extract the 'happyScore' and 'avg_income' columns from the data
+happy = data['happyScore']
+income = data['avg_income']
+
+# Plot happiness score vs average income
+plt.scatter(income, happy)
+
+# Add axis labels
+plt.xlabel('Average Income')
+plt.ylabel('Happiness Score')
+
+# Filter the data to only include countries with a happiness score above 6
+high_happiness = data[data['happyScore'] > 6]
+
+# Get the top 5 countries with the highest average income
+top_income = high_happiness.nlargest(5, 'avg_income')
+
+# Add labelled data points for the top 5 countries with high happiness and income
+for index, row in top_income.iterrows():
+    plt.annotate(row['country'], xy=(row['avg_income'], row['happyScore']), xytext=(row['avg_income']+5000, row['happyScore']+0.3), fontsize=10, arrowprops=dict(facecolor='black', arrowstyle='->'))
+
+# Add an explanation of the plot and labelled data points
+plt.title('Happiness Score vs Average Income')
+plt.suptitle('Top 5 Countries with High Happiness and Income')
+plt.figtext(0.5, 0.01, "This graph shows the relationship between a country's average income and happiness score, based on data from the 'happyscore_income.csv' dataset. The data has been filtered to only include countries with a happiness score above 6. The labelled data points represent the top 5 countries with the highest average income and happiness score. The data shows that these countries have a positive correlation between high income and high happiness.", horizontalalignment='center', fontsize=10)
+
+# Show the plot
+plt.show()
