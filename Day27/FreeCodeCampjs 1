@@ -1,0 +1,151 @@
+//Write Arrow Functions with Parameters
+
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+//Set Default Parameters for Your Functions
+
+/ Only change code below this line
+const increment = (number, value = 1) => number + value;
+console.log(increment(5));
+// Only change code above this line
+
+//const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2 = arr1;
+
+const spreaded = [...arr1];  // Change this line
+
+console.log(arr2);
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+
+const {yesterday} = HIGH_TEMPERATURES;
+const {today} = HIGH_TEMPERATURES;
+const {tomorrow} = HIGH_TEMPERATURES;
+// Only change code above this line
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES
+
+Destructuring via rest elements
+
+💕function removeFirstTwo(list) {
+  // comment with 'slice' to check comments are removed in tests
+  const [, , ...shorterList] = list;
+  return shorterList;
+}
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sourceWithoutFirstTwo = removeFirstTwo(source);
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+// change code below this line
+const half = ({max, min}) => ((max + min) / 2.0); // use function argument destructurung
+// change code above this line
+console.log(stats); // should be object
+console.log(half(stats)); // should be 28.015
+
+const result = {
+
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+
+  failure: ["no-var", "var-on-top", "linebreak"],
+
+  skipped: ["no-extra-semi", "no-dup-keys"]
+
+};
+
+function makeList(arr) {
+
+  // Only change code below this line
+
+  const failureItems = [];
+
+  for (let i=0; i < arr.length; i++) {
+
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+  } 
+  // Only change code above this line
+
+  return failureItems;
+
+}
+const failuresList = makeList(result.failure);
+
+
+// change code below this line
+const createPerson = (name, age, gender) => {
+  return {name,age,gender};
+};
+// change code above this line
+console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
+
+
+// change code below this line
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+// change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+
+<html>
+  <body>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
+
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+// This looks to be the easiest 
+// export { uppercaseString, lowercaseString };
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+export{uppercaseString, lowercaseString };
+
+import {uppercaseString}  from './string_functions.js'
+import {lowercaseString}  from './string_functions.js'
+// Only change code above this line
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+	
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {	
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
