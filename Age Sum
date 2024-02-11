@@ -1,0 +1,16 @@
+const people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 },
+];
+
+function sumAges(people) {
+  let totalAge = 0;
+  for (const person of people) {
+    totalAge += person.age;
+  }
+  return totalAge;
+}
+
+const totalAge = sumAges(people);
+console.log("Total age:", totalAge); // Output: 90
