@@ -1,0 +1,361 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Booking App",
+    "dateExported": "2024-03-12T14:41:16.337Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-01-29T13:25:38.176Z",
+            "sortNum": 10000    
+        },
+        {
+            "_id": "1c3208e8-5583-4e5f-8027-cb94c2ec57ca",
+            "name": "admin",
+            "containerId": "",
+            "created": "2024-02-19T17:45:40.453Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "c444e49c-3204-45ce-aa5f-4718f68c2081",
+            "name": "movie",
+            "containerId": "",
+            "created": "2024-02-20T15:57:13.671Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "e2d10776-ea6b-4d28-8bca-32dd49149b1b",
+            "name": "ticket",
+            "containerId": "",
+            "created": "2024-03-08T16:01:29.026Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "c5d699e2-83c1-40db-824a-4a93de389bc5",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "testing",
+            "url": "http://localhost:5000/api/users/seed",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-29T13:25:47.012Z",
+            "modified": "2024-01-29T19:03:06.002Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "03b32fd8-3d3a-4614-85f3-f2ce9c332305",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "register",
+            "url": "http://localhost:5000/api/users/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-29T18:56:01.857Z",
+            "modified": "2024-02-20T13:15:50.586Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Charles Tabot\",\n  \"email\":\"charles1.tabot@home.com\",\n  \"password\":\"Hello#123\",\n  \"address\":\"Douala Bonaberi\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5585f00c-8778-4ced-bf53-8d85050679d8",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "login",
+            "url": "http://localhost:5000/api/users/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-29T19:29:54.234Z",
+            "modified": "2024-02-20T20:03:24.662Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"charles.tabot@junior.com\",\n  \"password\":\"Hello#123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ff1b3e2e-a728-4483-ab2d-c585ea171be1",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "seeding",
+            "url": "http://localhost:5000/api/users/seed",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-19T11:28:04.176Z",
+            "modified": "2024-02-19T11:30:49.516Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "351bd014-2086-4085-abc7-d0c2a08a5eff",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "get all users",
+            "url": "http://localhost:5000/api/users/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-19T12:05:50.243Z",
+            "modified": "2024-02-19T12:10:29.987Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8de04d39-e346-4a82-b7b4-6668203211c8",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "get user info",
+            "url": "http://localhost:5000/api/users/65d33df74d3fefb38c3ad485",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-19T12:17:39.521Z",
+            "modified": "2024-02-19T12:18:16.372Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f870c770-4f43-435b-8740-f5308a293c75",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "update user",
+            "url": "http://localhost:5000/api/users/65d33dc04d3fefb38c3ad482",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-19T12:30:07.357Z",
+            "modified": "2024-02-19T12:33:27.929Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"address\":\"Memorz Buea\",\n  \"name\":\"Quinel Tabot\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ee37947f-ceb9-4bae-989f-ed53e34d110f",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "delete user",
+            "url": "http://localhost:5000/api/users/65d34c7e81dd4aa838069ebb",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-02-19T12:39:57.439Z",
+            "modified": "2024-02-19T12:42:18.955Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "28c9bf04-2459-42a0-93a0-65813fc3ed85",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "9457a0f2-174b-4f1c-9609-60d8ae33b6a1",
+            "name": "get user bookings",
+            "url": "http://localhost:5000/api/users/bookings/12",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-19T13:05:39.175Z",
+            "modified": "2024-02-19T13:06:03.388Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3fd2e4f1-2ae1-45a2-90f4-921a19f8f808",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "1c3208e8-5583-4e5f-8027-cb94c2ec57ca",
+            "name": "create admin",
+            "url": "http://localhost:5000/api/admin/register",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-02-19T17:45:51.170Z",
+            "modified": "2024-02-19T18:34:07.654Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"charles@ju.com\",\n  \"password\":\"Hello#123\",\n  \"addedMovies\":[\"Air bender\",\"The One\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2f2ea17a-7599-44fe-a1f6-9f9bb1cbc02a",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "1c3208e8-5583-4e5f-8027-cb94c2ec57ca",
+            "name": "admin login",
+            "url": "http://localhost:5000/api/admin/login",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-02-19T18:48:15.302Z",
+            "modified": "2024-02-20T15:59:23.831Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"charles@junior.com\",\n  \"password\":\"Hello#123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4aaf4a53-ded4-4ca2-b823-d1377d369feb",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "1c3208e8-5583-4e5f-8027-cb94c2ec57ca",
+            "name": "get all admins",
+            "url": "http://localhost:5000/api/admin/",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-02-19T19:04:36.446Z",
+            "modified": "2024-02-19T19:04:53.393Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6f0e7299-8d35-40ba-bfe8-1a4026c38013",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "1c3208e8-5583-4e5f-8027-cb94c2ec57ca",
+            "name": "get admin",
+            "url": "http://localhost:5000/api/admin/65d39c7450e05eaedf188cc4",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-02-19T19:09:11.262Z",
+            "modified": "2024-02-19T19:09:35.030Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "21469c47-d431-4fec-a669-adb04f25aa32",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "c444e49c-3204-45ce-aa5f-4718f68c2081",
+            "name": "add movie",
+            "url": "http://localhost:5000/api/movie/",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-02-20T15:57:21.091Z",
+            "modified": "2024-03-08T15:16:24.056Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZDM5Yzc0NTBlMDVlYWVkZjE4OGNjNCIsImVtYWlsIjoiY2hhcmxlc0BqdW5pb3IuY29tIiwiaWF0IjoxNzA4NzcyNDkxLCJleHAiOjE3MTEzNjQ0OTF9.s6J_xnQGtkgE5N2CXC74WJYLks4KtWudZ1hBrAF3ewM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Return of the Queen\",\n  \"language\": \"Ejagham\",\n  \"admin\": \"65d39c7450e05eaedf188cc4\",\n  \"location\": \"Memorz\",\n  \"programType\": \"show\",\n  \"description\":\"A long awaited return from the long spell\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "1ac893a1-e16c-4f6e-88e6-206034afc5e3",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "c444e49c-3204-45ce-aa5f-4718f68c2081",
+            "name": "get movies",
+            "url": "http://localhost:5000/api/movie/",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-03-08T14:58:58.129Z",
+            "modified": "2024-03-08T15:00:16.915Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "e04597ac-a7f2-42cc-baf0-719b32b787a7",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "c444e49c-3204-45ce-aa5f-4718f68c2081",
+            "name": "get a movie",
+            "url": "http://localhost:5000/api/movie/65eb27c575624bbe2401275d",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-08T15:00:35.103Z",
+            "modified": "2024-03-08T15:15:51.253Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "53efcc8d-3e0f-4172-9a50-6dc68b73e4e7",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "e2d10776-ea6b-4d28-8bca-32dd49149b1b",
+            "name": "create ticket",
+            "url": "http://localhost:5000/api/ticket/",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2024-03-08T16:01:36.840Z",
+            "modified": "2024-03-08T16:17:22.575Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user\":\"65d33dc04d3fefb38c3ad482\",\n  \"movie\":\"65eb14b0f4cc7a7d730de361\",\n  \"price\":14.6,\n  \"seatNumber\":22\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cd643834-860d-4eaa-b8b4-c8e3fa871a9a",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "e2d10776-ea6b-4d28-8bca-32dd49149b1b",
+            "name": "get tickets",
+            "url": "http://localhost:5000/api/ticket/",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-03-08T16:29:49.918Z",
+            "modified": "2024-03-08T16:30:02.350Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "eb00a7f3-500e-493e-8604-6c0793b43843",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "e2d10776-ea6b-4d28-8bca-32dd49149b1b",
+            "name": "get ticket",
+            "url": "http://localhost:5000/api/ticket/65eb39d06d5763da6ec49b78",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2024-03-08T16:30:24.726Z",
+            "modified": "2024-03-08T16:30:45.481Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6163422c-9be5-46e0-a79d-d9066e2424d9",
+            "colId": "2c9d1cd5-eb60-442b-91e3-1f01f0cd24ad",
+            "containerId": "e2d10776-ea6b-4d28-8bca-32dd49149b1b",
+            "name": "delete ticket",
+            "url": "http://localhost:5000/api/ticket/65eb39d06d5763da6ec49b78",
+            "method": "DELETE",
+            "sortNum": 200000,
+            "created": "2024-03-08T16:38:37.148Z",
+            "modified": "2024-03-08T16:38:53.380Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
